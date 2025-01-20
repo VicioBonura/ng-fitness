@@ -1,0 +1,66 @@
+{
+    "courses": [
+        {
+            "id": "c1",
+            "name": "Yoga",
+            "description": "Corso di Yoga per principianti",
+            "instructor": "Marco Rossi",
+            "duration": "60",
+            "capacity": "20",
+            "image": "http://localhost:3000/images/yoga.jpg"
+        },
+        {
+            "id": "c2",
+            "name": "Pilates",
+            "description": "Corso di Pilates per principianti",
+            "instructor": "Giovanni Bianchi",
+            "duration": "60",
+            "capacity": "20",
+            "image": "http://localhost:3000/images/pilates.jpg"
+        },
+        {
+            "id": "c3",
+            "name": "Zumba",
+            "description": "Corso di Zumba per principianti",
+            "instructor": "Francesco Gialli",
+            "duration": "60",
+            "capacity": "20",
+            "image": "http://localhost:3000/images/zumba.jpg"
+        },
+        {
+            "id": "c4",
+            "name": "Crossfit",
+            "description": "Corso di Crossfit per principianti",
+            "instructor": "Giovanni Bianchi",
+            "duration": "60",
+            "capacity": "20",
+            "image": "http://localhost:3000/images/crossfit.jpg"
+        }
+    ],
+    "bookings": [
+        {
+            "id": "b1",
+            "courseId": "c1",
+            "userName": "Mario Rossi",
+            "date": "2025-01-01"
+        },
+        {
+            "id": "b2",
+            "courseId": "c1",
+            "userName": "Flavia Bianchi",
+            "date": "2025-01-02"
+        },
+        {
+            "id": "b3",
+            "courseId": "c1",
+            "userName": "Paolo Neri",
+            "date": "2025-01-03"
+        },
+        {
+            "id": "b4",
+            "courseId": "c2",
+            "userName": "Pietro Verdi",
+            "date": "2025-01-04"
+        }
+    ]
+}
