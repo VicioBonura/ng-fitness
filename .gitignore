@@ -19,6 +19,8 @@ yarn-error.log
 *.launch
 .settings/
 *.sublime-workspace
+.cursorrules
+.consegna.md
 
 # Visual Studio Code
 .vscode/*
@@ -27,6 +29,7 @@ yarn-error.log
 !.vscode/launch.json
 !.vscode/extensions.json
 .history/*
+*.code-workspace
 
 # Miscellaneous
 /.angular/cache
