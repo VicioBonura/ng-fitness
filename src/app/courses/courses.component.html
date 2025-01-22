@@ -1,1 +1,19 @@
-<p>courses works!</p>
+<div class="container">
+    <div class="sidebar">
+        <h2>Corsi</h2>
+        @if(isFetching()) {
+            <p>Caricamento...</p>
+        }
+        @if(!courses()){
+            <p>Nessun corso presente</p>
+        } @else {
+            @for (course of courses(); track course.id) {
+                <app-course [course]="course" />
+            }
+        }
+
+    </div>
+    <div class="detail">
+        <router-outlet/>
+    </div>
+</div>
