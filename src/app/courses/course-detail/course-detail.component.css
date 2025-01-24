@@ -1,0 +1,66 @@
+.course-detail {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.table-row {
+    padding: 0.5rem;
+    border-top: 1px dashed #ccc;
+}
+
+img {
+    width: 100%;
+    border-radius: 0.25rem;
+    display: block;
+}
+
+.booking-form {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    border: 1px dashed #ccc;
+    padding: 1rem;
+    border-radius: 0.25rem;
+
+    p {
+        margin: 0;
+        line-height: 36px;
+
+        &.unavailable {
+            text-decoration: line-through;
+            color: #999;
+        }
+    }
+}
+
+form {
+    display: flex;
+    align-items: center;
+
+    input[type="text"] {
+        border: 1px solid #ccc;
+        border-radius: 0.25rem 0 0 0.25rem;
+        padding: 0.5rem;
+        border-right: none;
+        font-size: 1rem;
+    }
+
+    button {
+        border: 1px solid #007bff;
+        border-radius: 0 0.25rem 0.25rem 0;
+        height: 36px;
+        padding: 0.5rem;
+        border-left: none;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}

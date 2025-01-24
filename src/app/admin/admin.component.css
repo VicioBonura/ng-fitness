@@ -1,0 +1,75 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar {
+    width: 250px;
+    border-right: 1px solid #ccc;
+    border-image: linear-gradient(to bottom, #ccc, #ccc0) 1;
+    padding: 1rem;
+}
+
+.actions {
+    margin-bottom: 1rem;
+}
+
+.new-course-btn {
+    display: block;
+    padding: 0.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+
+.course-item {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px dashed #ccc;
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        top: -1px;
+        right: -1rem;
+        bottom: -1px;
+        width: 0;
+        z-index: -1;
+        transition: all 0.3s ease;
+        background-image: linear-gradient(to right, transparent, #ccc 33%, #007bff 66%);
+        background-size: 300% 100%;
+        background-position: 0 0;
+    }
+
+    &.active .name {
+        color: #ffffff;
+    }
+
+    &:hover:after,
+    &:focus:after,
+    &.active:after {
+        width: calc(100% + 2rem);
+    }
+
+
+    &.active:after {
+        background-position: 100% 0;
+    }
+}
+
+.bookings {
+    font-size: 0.625rem;
+    background: #ffffff;
+    box-shadow: inset 0 2px 5px #0002;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+}

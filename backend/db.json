@@ -1,66 +1,362 @@
 {
-    "courses": [
-        {
-            "id": "c1",
-            "name": "Yoga",
-            "description": "Corso di Yoga per principianti",
-            "instructor": "Marco Rossi",
-            "duration": "60",
-            "capacity": "20",
-            "image": "http://localhost:3000/images/yoga.jpg"
-        },
-        {
-            "id": "c2",
-            "name": "Pilates",
-            "description": "Corso di Pilates per principianti",
-            "instructor": "Giovanni Bianchi",
-            "duration": "60",
-            "capacity": "20",
-            "image": "http://localhost:3000/images/pilates.jpg"
-        },
-        {
-            "id": "c3",
-            "name": "Zumba",
-            "description": "Corso di Zumba per principianti",
-            "instructor": "Francesco Gialli",
-            "duration": "60",
-            "capacity": "20",
-            "image": "http://localhost:3000/images/zumba.jpg"
-        },
-        {
-            "id": "c4",
-            "name": "Crossfit",
-            "description": "Corso di Crossfit per principianti",
-            "instructor": "Giovanni Bianchi",
-            "duration": "60",
-            "capacity": "20",
-            "image": "http://localhost:3000/images/crossfit.jpg"
-        }
-    ],
-    "bookings": [
-        {
-            "id": "b1",
-            "courseId": "c1",
-            "userName": "Mario Rossi",
-            "date": "2025-01-01"
-        },
-        {
-            "id": "b2",
-            "courseId": "c1",
-            "userName": "Flavia Bianchi",
-            "date": "2025-01-02"
-        },
-        {
-            "id": "b3",
-            "courseId": "c1",
-            "userName": "Paolo Neri",
-            "date": "2025-01-03"
-        },
-        {
-            "id": "b4",
-            "courseId": "c2",
-            "userName": "Pietro Verdi",
-            "date": "2025-01-04"
-        }
-    ]
+  "courses": [
+    {
+      "id": "c1",
+      "name": "Yoga",
+      "description": "Corso di Yoga per principianti",
+      "instructor": "Marco Rossi",
+      "duration": "120",
+      "capacity": 15,
+      "image": "http://localhost:3000/images/yoga.jpg"
+    },
+    {
+      "id": "c2",
+      "name": "Pilates",
+      "description": "Corso di Pilates per principianti",
+      "instructor": "Giovanni Bianchi",
+      "duration": "80",
+      "capacity": 20,
+      "image": "http://localhost:3000/images/pilates.jpg"
+    },
+    {
+      "id": "c3",
+      "name": "Zumba",
+      "description": "Corso di Zumba per principianti",
+      "instructor": "Francesco Gialli",
+      "duration": "100",
+      "capacity": 30,
+      "image": "http://localhost:3000/images/zumba.jpg"
+    },
+    {
+      "id": "c4",
+      "name": "Crossfit",
+      "description": "Corso di Crossfit per principianti",
+      "instructor": "Giovanni Bianchi",
+      "duration": "60",
+      "capacity": 20,
+      "image": "http://localhost:3000/images/crossfit.jpg"
+    },
+    {
+      "id": "c5",
+      "name": "Spinning",
+      "description": "Corso di Spinning per principianti",
+      "instructor": "Luca Verdi",
+      "duration": "90",
+      "capacity": 25,
+      "image": "http://localhost:3000/images/placeholder.svg"
+    },
+    {
+      "id": "c6",
+      "name": "Boxe",
+      "description": "Corso di Boxe per principianti",
+      "instructor": "Alessandro Neri",
+      "duration": "70",
+      "capacity": 15,
+      "image": "http://localhost:3000/images/placeholder.svg"
+    },
+    {
+      "id": "c7",
+      "name": "Nuoto",
+      "description": "Corso di Nuoto per principianti",
+      "instructor": "Maria Rossi",
+      "duration": "60",
+      "capacity": 20,
+      "image": "http://localhost:3000/images/placeholder.svg"
+    },
+    {
+      "id": "c8",
+      "name": "Tennis",
+      "description": "Corso di Tennis per principianti",
+      "instructor": "Giulia Bianchi",
+      "duration": "50",
+      "capacity": 10,
+      "image": "http://localhost:3000/images/placeholder.svg"
+    },
+    {
+      "id": "",
+      "name": "sdf",
+      "description": "sdf",
+      "instructor": "sdf",
+      "duration": 50,
+      "capacity": 10,
+      "image": "http://localhost:3000/images/placeholder.svg"
+    }
+  ],
+  "bookings": [
+    {
+      "id": "2797",
+      "courseId": "c3",
+      "userName": "Ciccio"
+    },
+    {
+      "id": "1e8c",
+      "courseId": "c3",
+      "userName": "Maccio"
+    },
+    {
+      "id": "a417",
+      "courseId": "c4",
+      "userName": "asdasd"
+    },
+    {
+      "id": "f58e",
+      "courseId": "c4",
+      "userName": "asdasd"
+    },
+    {
+      "id": "32ef",
+      "courseId": "c4",
+      "userName": "asdasd"
+    },
+    {
+      "id": "7888",
+      "courseId": "c4",
+      "userName": "asdasd"
+    },
+    {
+      "id": "f1ea",
+      "courseId": "c4",
+      "userName": "asdasd"
+    },
+    {
+      "id": "9a61",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "cc7f",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "a80d",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "0034",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "d437",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "91af",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "b0ba",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "9720",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "8cf2",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "a57d",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "c146",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "8411",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "337d",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "8fe6",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "dd1c",
+      "courseId": "c4",
+      "userName": "asd"
+    },
+    {
+      "id": "ca2d",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "898e",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "03e1",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "edca",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "859e",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "3187",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "834d",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "7ee8",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "678a",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "57cf",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "6fe1",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "81e6",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "ae68",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "d8bd",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "822f",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "f3d7",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "faeb",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "2730",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "2b60",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "4fe4",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "9e7e",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "d702",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "212a",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "d287",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "d847",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "9947",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "fec1",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "75c0",
+      "courseId": "c3",
+      "userName": "a"
+    },
+    {
+      "id": "9521",
+      "courseId": "c2",
+      "userName": "Ciccio"
+    },
+    {
+      "id": "139e",
+      "courseId": "c2",
+      "userName": "Ciccio"
+    },
+    {
+      "id": "82dc",
+      "courseId": "c2",
+      "userName": "Ciccio"
+    },
+    {
+      "id": "5f98",
+      "courseId": "c2",
+      "userName": "Ciccio"
+    },
+    {
+      "id": "ee6c",
+      "courseId": "c2",
+      "userName": "asd"
+    }
+  ]
 }

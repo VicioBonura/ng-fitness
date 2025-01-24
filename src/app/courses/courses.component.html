@@ -4,7 +4,7 @@
         @if(isFetching()) {
             <p>Caricamento...</p>
         }
-        @if(!courses()){
+        @if(courses() && courses()?.length === 0) {
             <p>Nessun corso presente</p>
         } @else {
             @for (course of courses(); track course.id) {
@@ -13,7 +13,7 @@
         }
 
     </div>
-    <div class="detail">
+    <div class="content">
         <router-outlet/>
     </div>
 </div>

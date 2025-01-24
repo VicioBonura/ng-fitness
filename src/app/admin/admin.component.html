@@ -1,1 +1,27 @@
-<p>admin works!</p>
+<div class="container">
+    <div class="sidebar">
+        <h2>Gestione Corsi</h2>
+        <div class="actions">
+            <a [routerLink]="['new']" class="new-course-btn">
+                + Nuovo Corso
+            </a>
+        </div>
+        @if(isFetching()) {
+            <p>Caricamento...</p>
+        }
+        @if(courses() && courses()?.length === 0) {
+            <p>Nessun corso presente</p>
+        } @else {
+            @for (course of courses(); track course.id) {
+
+                <a [routerLink]="[course.id]" routerLinkActive="active" class="course-item">
+                    <span class="name">{{course.name}}</span>
+                    <span class="bookings" title="Iscritti / Posti disponibili">{{bookingStats()[course.id] || 0}}/{{course.capacity}}</span>
+                </a>
+            }
+        }
+    </div>
+    <div class="content">
+        <router-outlet/>
+    </div>
+</div>

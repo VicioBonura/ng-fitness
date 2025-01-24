@@ -1,0 +1,49 @@
+.label {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-top: 1px dashed #ccc;
+    position: relative;
+
+    &::after {
+        content:'';
+        position: absolute;
+        top: -1px;
+        right: -1rem;
+        bottom: -1px;
+        width: 0;
+        z-index: -1;
+        transition: all 0.3s ease;
+        background-image: linear-gradient(to right, transparent, #ccc 33%, #007bff 66%);
+        background-size: 300% 100%;
+        background-position: 0 0;
+    }
+
+    &.active .name {
+        color: #ffffff;
+    }
+
+    &:hover:after,
+    &:focus:after,
+    &.active:after {
+        width: calc(100% + 2rem);
+    }
+
+
+    &.active:after {
+        background-position: 100% 0;
+    }
+}
+
+.duration {
+    font-size: 0.625rem;
+    background: #ffffff;
+    box-shadow: inset 0 2px 5px #0002;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.75rem;
+}

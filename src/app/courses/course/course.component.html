@@ -1,1 +1,4 @@
-<p>course works!</p>
+<a [routerLink]="[course().id]" routerLinkActive="active" class="label">
+    <div class="name">{{course().name}}</div>
+    <div class="duration">{{course().duration}} h</div>    
+</a>

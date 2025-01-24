@@ -29,12 +29,10 @@ export class CoursesComponent implements OnInit {
           console.error(error);
         },
         complete: () => {
-          console.log('fetch corsi completo');
           this.isFetching.set(false);
         }
       });
     this.destroyRef.onDestroy(() => {
-      console.log('destroy');
       subscription.unsubscribe();
     });
   }

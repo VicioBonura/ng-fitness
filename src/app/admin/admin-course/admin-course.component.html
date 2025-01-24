@@ -1,0 +1,81 @@
+<div class="admin-course">
+  <h2 class="page-title">
+    {{ isNewCourse() ? 'Nuovo Corso' : 'Modifica Corso' }}
+  </h2>
+
+  <form #courseForm="ngForm" (ngSubmit)="onSubmit(courseForm)">
+    <div class="form-group">
+      <label for="name">Nome</label>
+      <input 
+        type="text" 
+        id="name" 
+        name="name"
+        [(ngModel)]="course().name"
+        required 
+        minlength="3"
+        #name="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descrizione</label>
+      <textarea 
+        id="description" 
+        name="description"
+        [(ngModel)]="course().description"
+        required
+        #description="ngModel"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="instructor">Istruttore</label>
+      <input 
+        type="text" 
+        id="instructor" 
+        name="instructor"
+        [(ngModel)]="course().instructor"
+        required
+        #instructor="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Durata (ore)</label>
+      <input 
+        type="number" 
+        id="duration" 
+        name="duration"
+        [(ngModel)]="course().duration"
+        required
+        min="1"
+        #duration="ngModel">
+    </div>
+
+    <div class="form-group">
+      <label for="capacity">Capacità</label>
+      <input 
+        type="number" 
+        id="capacity" 
+        name="capacity"
+        [(ngModel)]="course().capacity"
+        required
+        min="0"
+        #capacity="ngModel">
+    </div>
+
+    <div class="form-actions">
+      <button 
+        type="submit" 
+        [disabled]="!courseForm.valid"
+        class="btn btn-primary"
+      >
+        {{ isNewCourse() ? 'Crea Corso' : 'Aggiorna Corso' }}
+      </button>
+      <button 
+        type="button" 
+        (click)="onCancel()"
+        class="btn btn-secondary"
+      >
+        Annulla
+      </button>
+    </div>
+  </form>
+</div>

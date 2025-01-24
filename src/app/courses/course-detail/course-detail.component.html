@@ -1,0 +1,37 @@
+@if(course()) {
+    <div class="course-detail">
+        <img [src]="course()?.image" alt="Course Image">
+        <div class="course-info">
+            <h2>{{course()?.name}}</h2>
+            <div class="description table-row">{{course()?.description}}</div>
+            <div class="instructor table-row"><span class="label">Instructor: </span>{{course()?.instructor}}</div>
+            <div class="duration table-row"><span class="label">Durata: </span>{{course()?.duration}}</div>
+            <div class="capacity table-row">
+                <span class="label">Posti disponibili: </span>
+                {{courseAvailability()}} / {{course()?.capacity}}
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <p [class.unavailable]="!isAvailable()">Iscriviti</p>
+            @if(isAvailable()) {
+                <form #courseForm="ngForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                    <label for="nomeUtente">Il tuo nome: </label>
+                    <input 
+                        type="text" 
+                        id="nomeUtente"
+                        name="nomeUtente"
+                        [(ngModel)]="formData.nomeUtente"
+                        required>
+                    </div>
+                    
+                    <button type="submit">Invia</button>
+                </form>
+            }
+            @else {
+                <div class="unavailable">Siamo spiacenti, il corso è al completo</div>
+            }
+        </div>
+    </div>
+}

@@ -29,9 +29,19 @@ export class ApiService {
       )
   } 
 
-  post(url: string, data: any, errorMessage: string) {
+  post<T>(url: string, data: any, errorMessage: string) {
     const endpoint = `${this.baseUrl}/${url}`;
     return this.httpClient.post(endpoint, data)
+      .pipe(
+        catchError(error => {
+          return throwError(() => new Error(errorMessage));
+        })
+      )
+  }
+
+  put<T>(url: string, id: string, data: any, errorMessage: string) {
+    const endpoint = `${this.baseUrl}/${url}/${id}`;
+    return this.httpClient.put(endpoint, data)
       .pipe(
         catchError(error => {
           return throwError(() => new Error(errorMessage));

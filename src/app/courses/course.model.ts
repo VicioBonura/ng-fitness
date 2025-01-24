@@ -4,6 +4,6 @@ export interface Course {
     description: string;
     instructor: string;
     duration: string;
-    capacity: string;
+    capacity: number;
     image: string;
 }
