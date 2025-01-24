@@ -20,4 +20,5 @@ Le immagini sono servite da `json-server` e sono disponibili all'indirizzo `http
 Si è scelto di realizzare un service `api.service.ts` con l'implementazione generica dei metodi HTTP, da importare nei services specifici `booking.service.ts` e `courses.service.ts`.
 
 ## Note
-la sezione Admin non è completa, manca la gestione di creazione/modifica/eliminazione dei corsi.
+- la sezione Admin non è completa, manca la gestione di creazione/modifica/eliminazione dei corsi.
+- le sezioni Home e About sono state lasciate vuote.
